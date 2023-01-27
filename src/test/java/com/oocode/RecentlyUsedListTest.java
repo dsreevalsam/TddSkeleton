@@ -37,4 +37,5 @@ public class RecentlyUsedListTest {
 		newList.addItem("TestValue");
 		assertThat(newList.retrieveItem(),equalTo("TestValue"));
 	}
+
 }
