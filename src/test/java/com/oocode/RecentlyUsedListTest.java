@@ -24,4 +24,11 @@ public class RecentlyUsedListTest {
 	public void isEmptyWhenInitialised() {
 		assertThat(new RecentlyUsedList().isEmpty(),equalTo(true));
 	}
+
+	@Test
+	public  void notEmptyWhenHasItewms() {
+		var newList = new RecentlyUsedList();
+		newList.addItem("TestValue1");
+		assertThat(newList.isEmpty(),equalTo(false));
+	}
 }
