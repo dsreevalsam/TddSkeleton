@@ -1,12 +1,16 @@
 package com.oocode;
 
 public class RecentlyUsedList {
-    private Boolean hasItem =false;
+    private String item = null;
     public Boolean isEmpty() {
-        return !hasItem;
+        return item == null;
     }
 
     public void addItem(String item) {
-        hasItem =true;
+        this.item = item;
+    }
+
+    public String retrieveItem() {
+        return item;
     }
 }
